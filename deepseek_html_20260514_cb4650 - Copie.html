@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat avec Groq via deep-chat</title>
+    <!-- Import du module deep-chat -->
+    <script type="module" src="https://unpkg.com/deep-chat-dev@latest/dist/deepChat.bundle.js"></script>
+</head>
+<body>
+    <deep-chat
+        directConnection='{
+            "groq": {
+                "key": "your api key mistral",
+                "model": "openai/gpt-oss-20b"
+            }
+        }'
+        style="border-radius: 10px; height: 500px; width: 100%;">
+    </deep-chat>
+</body>
+</html>
